@@ -9,4 +9,10 @@ The AppFog application should be setup as follows:
 
 Select **Rack** application. 
 
-Ensure that an environment variable ```REDISTOGO_URL``` is set, with the appropriate URL.
+Ensure that the following environment variables are set:
+
+- ```REDISTOGO_URL```: RedisToGo URL w/ credentials
+- ```ADMIN_USER```: Admin username
+- ```ADMIN_PASS```: Admin password
+
+

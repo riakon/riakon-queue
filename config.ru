@@ -8,7 +8,7 @@ require 'sidekiq/web'
 require 'json'
 
 Sidekiq::Web.use Rack::Auth::Basic do |username, password|
-  username == 'some_user' && password == 'some_pass'
+  username == ENV['ADMIN_USER'] && password == ENV['ADMIN_PASS']
 end 
 
 run Sidekiq::Web
