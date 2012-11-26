@@ -1,7 +1,7 @@
 require 'sidekiq'
 
 Sidekiq.configure_client do |config|
-  config.redis = { :namespace=> 'sk', :size => 1 }
+  config.redis = { :namespace=> 'sidekiq', :size => 1 }
 end
 
 require 'sidekiq/web'
